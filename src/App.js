@@ -7,7 +7,7 @@ import './css/bootstrap.css';
 import './css/style.css';
 import json from "./mydata.json"; //console.log("Mydata", Mydata);
 /////////////////////////////
-
+//test
 const ThumbGroup = ({
   id,
   title,
