@@ -9,7 +9,8 @@ import json from "./mydata.json"; //console.log("Mydata", Mydata);
 ReactDOM.render(
     <App 
         json= {json}
-        thumbs_gen={json.items}
+        thumbs_banner={json.items_banner}
+        thumbs_social={json.items_social}
         thumbs_yt={json.items_youtube}
         thumbs_book={json.items_book}
     />, 

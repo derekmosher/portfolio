@@ -20,18 +20,17 @@ const ThumbGroup = ({
 
 //console.log(id, thumbPath, itemsKey, referenceArr)
   return (
-    <div className="col-lg-3 ab-content" >
-     <div className="ab-content-inner editContent">
+    <div className="col-lg-3 ab-content" > 
+     <div className="ab-content-inner editContent gal-img" > 
         <img 
          className="img-fluid" 
           onClick={() => handleClick(id, itemsKey)} 
           alt={"thumbnail_" +id}
-          src={thumbPath.includes("http") ? thumbPath : "../images/" + thumbPath}          
-          //src="../images/"          
-          style={{ outline: 'none', cursor: 'inherit'}}
+          src={thumbPath.includes("http") ? thumbPath : "../images/" + thumbPath}                   
+          style={{ outline: 'none', cursor: 'pointer'}}
         />
       <div className="ab-info-con">
-        <h4 className="editContent" style={{ outline: 'none', cursor: 'inherit' }}>{title}</h4>
+        <h4 className="editContent" style={{ outline: 'none', cursor: 'inherit',marginBottom:'6px' }}>{title}</h4>
         <p className="editContent">{description}</p>
       </div>
     </div>
@@ -52,7 +51,8 @@ class App extends React.Component {
     this.item = null; // reference to the DOM node
     //
     this.textArray = [] //intro text reference holder
-    this.thumbArray1 = props.thumbs_gen//[] //icons 1 group reference holder
+    this.thumbArray1 = props.thumbs_banner//[] //icons 1 group reference holder
+    this.thumbArray4 = props.thumbs_social//[] //icons 2 group reference holder
     this.thumbArray2 = props.thumbs_yt//[] //icons 2 group reference holder
     this.thumbArray3 = props.thumbs_book //[] //icons 3 group reference holder
   }
@@ -183,17 +183,17 @@ class App extends React.Component {
           </section>
 
     {/*/ My Work  ====================================================================*/}
-          <section className="services py-5 editContent" id="work">
+          <section className="section_banner py-5 editContent" id="work">
             <div className="container py-md-5">
               <div className="header pb-lg-3 pb-3 text-center">
                 <h3 className="tittle mb-lg-3 mb-3 editContent">My Work</h3>
               </div>
                {/*/ Line 1 ====================================================================*/}
               <div className="row ab-info second mt-lg-4 editContent">
-              {this.props.thumbs_gen.map((item, i) => (
+              {this.props.thumbs_banner.map((item, i) => (
                 <ThumbGroup
                     handleClick={this.showReactBox}
-                    itemsKey="items"
+                    itemsKey="items_banner"
                     key={i}
                     id={i}
                     title={item.title}
@@ -205,8 +205,32 @@ class App extends React.Component {
               </div>
             </div>
           </section>
+{/*/ My Social  ====================================================================*/}
+            <section className="section_social py-5 editContent" id="work">
+            <div className="container py-md-5">
+              <div className="header pb-lg-3 pb-3 text-center">
+                <h3 className="tittle mb-lg-3 mb-3 editContent">Social Media</h3>
+              </div>
+               {/*/ Line 1 ====================================================================*/}
+              <div className="row ab-info second mt-lg-4 editContent">
+              {this.props.thumbs_social.map((item, i) => (
+                <ThumbGroup
+                    handleClick={this.showReactBox}
+                    itemsKey="items_social"
+                    key={i}
+                    id={i}
+                    title={item.title}
+                    description={item.description}
+                    info={item.info}
+                    thumbPath={item.thumbPath}
+                  />
+                  ))}
+              </div>
+            </div>
+          </section>
+ 
     {/*/ Youtube ====================================================================*/}
-          <section className="services py-5 editContent" id="">
+          <section className="section_yt py-5 editContent" id="">
             <div className="container py-md-5">
               <div className="header pb-lg-3 pb-3 text-center">
                 <h3 className="tittle mb-lg-3 mb-3 editContent">Youtube Content Creator</h3>

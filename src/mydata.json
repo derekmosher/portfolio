@@ -1,6 +1,5 @@
 {
-  "items": [
-
+  "items_banner": [
     {
       "title": "Ice Age",
       "description": "Adobe Edge. Nice smooth fun animation.",
@@ -11,7 +10,7 @@
     },
     {
       "title": "Sleepy Hollow",
-      "description": "HTML, CSS, Javascript.",
+      "description": "HTML, css, javascript.",
       "thumbPath": "https://derekmosher.github.io/work_to_display/sleepyHollow/thumb.jpg",
       "filePath": "https://derekmosher.github.io/work_to_display/sleepyHollow/index.html",
       "w": 300,
@@ -28,10 +27,10 @@
     {
       "title": "Masters of Sex ",
       "description":  "Html, css, javascript. Interesting kaleidoscope effect",
-      "thumbPath": "thumb_mastersofsex.jpg",
-      "filePath": "https://derekmosher.github.io/work_to_display/mastersofsex/index.html",
-      "w": 160,
-      "h": 600
+      "thumbPath": "https://derekmosher.github.io/work_to_display/mos/thumbs_mos.jpg",
+      "filePath": "https://derekmosher.github.io/work_to_display/mos/index.html",
+      "w": 300,
+      "h": 250
     },
     {
       "title": "Bones",
@@ -42,28 +41,20 @@
       "h": 250
     },
     {
-      "title": "Int Champ Cup",
-      "description": "dynamic banners",
-      "thumbPath": "thumb_icc.jpg",
-      "filePath": "https://derekmosher.github.io/work_to_display/icc/index.html",
+      "title": "We TV",
+      "description": "Adobe Edge",
+      "thumbPath": "https://derekmosher.github.io/work_to_display/wetv/thumb_wetv.jpg",
+      "filePath": "https://derekmosher.github.io/work_to_display/wetv/wetv_300x250.html",
       "w": 300,
       "h": 250
     },
     {
       "title": "The Magician",
-      "description": "HTML, CSS, Javascript",
+      "description": "HTML, css, javascript",
       "thumbPath": "https://derekmosher.github.io/work_to_display/magician/thumb.jpg",
       "filePath": "https://derekmosher.github.io/work_to_display/magician/index.html",
       "w": 970,
       "h": 250
-    },
-    {
-      "title": "Animated Gifs",
-      "description": "AE ink effect",
-      "thumbPath": "thumb_contantine.jpg",
-      "filePath": "https://derekmosher.github.io/work_to_display/constantine_ink_gifs/index.html",
-      "w": 900,
-      "h": 500
     },
     {
       "title": "The Last Ship",
@@ -74,6 +65,56 @@
       "h": 250
     }
   ],
+  "items_social": [
+    {
+      "title": "Constantine",
+      "description": "AE ink effect",
+      "thumbPath":"https://derekmosher.github.io/work_to_display/socialmedia/constantine/thumb_constantine.jpg",
+      "filePath": "https://derekmosher.github.io/work_to_display/socialmedia/constantine/constantine_ink_gifs.html",
+      "w": 900,
+      "h": 500
+    },
+    {
+      "title": "Constantine",
+      "description": "AE fire & rain",
+      "thumbPath": "https://derekmosher.github.io/work_to_display/socialmedia/gifs/thumb_constantine_fire.jpg",
+      "filePath": "https://derekmosher.github.io/work_to_display/socialmedia/gifs/constantine_fire_403x403.gif",
+      "w": 403,
+      "h": 403
+    },
+    {
+      "title": "State of Affairs",
+      "description": "AE",
+      "thumbPath": "https://derekmosher.github.io/work_to_display/socialmedia/soa/thumb_soa.jpg",
+      "filePath": "https://derekmosher.github.io/work_to_display/socialmedia/soa/soa.html",
+      "w": 710,
+      "h": 394
+    },
+  {
+    "title": "Witch Drop",
+    "description": "AE 3d effect",
+    "thumbPath": "https://derekmosher.github.io/work_to_display/socialmedia/gifs/thumb_witchDrop.jpg",
+    "filePath": "https://derekmosher.github.io/work_to_display/socialmedia/gifs/witchDrop2.gif",
+    "w": 500,
+    "h": 272
+  },
+  {
+    "title": "Mcfarland",
+    "description": "AE video editing",
+    "thumbPath": "https://derekmosher.github.io/work_to_display/socialmedia/mcfarland/thumb_mcfarland.jpg",
+    "filePath": "https://derekmosher.github.io/work_to_display/socialmedia/mcfarland/mcfarland.html",
+    "w": 500,
+    "h": 500
+  },
+  {
+    "title": "Allegience",
+    "description": "AE Page Takeover",
+    "thumbPath": "https://derekmosher.github.io/work_to_display/socialmedia/allegience/thumb_allegience.jpg",
+    "filePath": "https://derekmosher.github.io/work_to_display/socialmedia/allegience/allegiance_wallpaper.html",
+    "w": 964,
+    "h": 540
+  }
+],
   "items_youtube": [
     {
       "title": "Game of Bones - Ep2",
@@ -86,7 +127,7 @@
     {
       "title": "Game of Bones - Ep3",
       "description": "After Effects, Premiere",
-      "thumbPath": "thumb_gob.jpg",
+      "thumbPath": "thumb_gob3.jpg",
       "filePath": "https://www.youtube.com/embed/3HCSTWS8-aQ",
       "w": 560,
       "h": 315

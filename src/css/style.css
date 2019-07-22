@@ -606,11 +606,19 @@ a.read-more:hover {
 /*-- //popup --*/
 
 /*-- //banner --*/
-
-.services {
+.img-fluid{
+    cursor: pointer;
+    background: #ff0000;
+}
+.section_banner {
     background: #f7f7f7;
 }
-
+ .section_yt{
+    background: #f7f7f7;
+}
+.section_social {
+    background: #fff;
+}
 h3.tittle, h3.tittle.two {
     font-size: 2.5em;
     font-weight: 600;
