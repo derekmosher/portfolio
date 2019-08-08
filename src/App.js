@@ -5,7 +5,6 @@ import ReactBox from "./ReactBox";
 import ReactPlayer from "react-player";
 import './css/bootstrap.css';
 import './css/style.css';
-import json from "./mydata.json"; //console.log("Mydata", Mydata);
 /////////////////////////////
 
 const ThumbGroup = ({
@@ -46,7 +45,8 @@ class App extends React.Component {
       itemsKey: "items",
       data: {}
     };
-  
+    console.log("Mydata", props.json);
+    this.json = props.json
     this.bg = null; // reference to the DOM node
     this.item = null; // reference to the DOM node
     //
@@ -388,9 +388,9 @@ the chase was derailed.</p>
           <div style={{ position: "absolute", top: "0px"}}>
           {this.state.showtimeVisible && (
             <ReactBox
-              filePath={json[this.state.itemsKey][this.state.thumbNum].filePath}
-              h={json[this.state.itemsKey][this.state.thumbNum].h}
-              w={json[this.state.itemsKey][this.state.thumbNum].w}
+              filePath={this.json[this.state.itemsKey][this.state.thumbNum].filePath}
+              h={this.json[this.state.itemsKey][this.state.thumbNum].h}
+              w={this.json[this.state.itemsKey][this.state.thumbNum].w}
               killMe={this.hideReactBox}
             />
           )}
