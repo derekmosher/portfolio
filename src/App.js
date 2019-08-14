@@ -51,6 +51,7 @@ class App extends React.Component {
     this.item = null; // reference to the DOM node
     //
     this.textArray = [] //intro text reference holder
+    this.thumbArray0 = props.thumbs_design//[] //icons 1 group reference holder
     this.thumbArray1 = props.thumbs_banner//[] //icons 1 group reference holder
     this.thumbArray4 = props.thumbs_social//[] //icons 2 group reference holder
     this.thumbArray2 = props.thumbs_yt//[] //icons 2 group reference holder
@@ -181,12 +182,34 @@ class App extends React.Component {
               </div>
             </div>
           </section>
-
+    {/*/ My Deisgn  ====================================================================*/}
+    <section className="section_banner py-5 editContent" id="work">
+            <div className="container py-md-5">
+              <div className="header pb-lg-3 pb-3 text-center">
+                <h3 className="tittle mb-lg-3 mb-3 editContent">Design</h3>
+              </div>
+               {/*/ Line 1 ====================================================================*/}
+              <div className="row ab-info second mt-lg-4 editContent">
+              {this.props.thumbs_design.map((item, i) => (
+                <ThumbGroup
+                    handleClick={this.showReactBox}
+                    itemsKey="items_design"
+                    key={i}
+                    id={i}
+                    title={item.title}
+                    description={item.description}
+                    info={item.info}
+                    thumbPath={item.thumbPath}
+                  />
+                  ))}
+              </div>
+            </div>
+          </section>
     {/*/ My Work  ====================================================================*/}
           <section className="section_banner py-5 editContent" id="work">
             <div className="container py-md-5">
               <div className="header pb-lg-3 pb-3 text-center">
-                <h3 className="tittle mb-lg-3 mb-3 editContent">My Work</h3>
+                <h3 className="tittle mb-lg-3 mb-3 editContent">Banner Animation + Misc</h3>
               </div>
                {/*/ Line 1 ====================================================================*/}
               <div className="row ab-info second mt-lg-4 editContent">

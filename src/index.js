@@ -6,7 +6,10 @@ import * as serviceWorker from './serviceWorker';
 //import json from "./mydata.json"; //console.log("Mydata", Mydata);
 ////////////////////////
 
-fetch("https://derekmosher.github.io/work_to_display/mydata.json")
+const link = "https://derekmosher.github.io/work_to_display/mydata.json"
+const link2 = "https://derekmosher.github.io/work_to_display/mydata_temp.json"
+
+fetch(link2)
   .then(response => response.json())
   .then((jsonData) => {
     // jsonData is parsed json object received from url
@@ -15,6 +18,7 @@ fetch("https://derekmosher.github.io/work_to_display/mydata.json")
     ReactDOM.render(
         <App 
             json= {jsonData}
+            thumbs_design={jsonData.items_design}
             thumbs_banner={jsonData.items_banner}
             thumbs_social={jsonData.items_social}
             thumbs_yt={jsonData.items_youtube}
