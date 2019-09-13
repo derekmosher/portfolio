@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from 'react-dom';
 import "./ReactBox.css";
 import { TweenMax,  } from "gsap/TweenMax";
 

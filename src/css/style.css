@@ -398,7 +398,7 @@ li > a:only-child:after {
 /*-- //header --*/
 
 .main-content {
-    background: url(../images/bg2.jpg) center no-repeat;
+    background: url(../images/bg2x.jpg) center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -609,15 +609,7 @@ a.read-more:hover {
     cursor: pointer;
     background: #ff0000;
 }
-.section_banner {
-    background: #f7f7f7;
-}
- .section_yt{
-    background: #f7f7f7;
-}
-.section_social {
-    background: #fff;
-}
+
 h3.tittle, h3.tittle.two {
     font-size: 2.5em;
     font-weight: 600;
@@ -1576,3 +1568,19 @@ a.move-top span {
 }
 }
 /*-- //Responsive design --*/
+/* Stuff i tacked on this ths shit */
+.section1 {
+    background: #d8d8d8;
+}
+ .section2{
+    background: #fff;
+}
+.section3 {
+    background: #d8d8d8;
+}
+.section4 {
+    background: #fff;
+}
+.section5 {
+    background: #d8d8d8;
+}

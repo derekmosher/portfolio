@@ -45,7 +45,8 @@ class App extends React.Component {
       itemsKey: "items",
       data: {}
     };
-    console.log("Mydata", props.json);
+    console.log("Mydata = ", props.json);
+    console.log("Mydata title = ", props.json.section1.bg ,props.json.section4.title);
     this.json = props.json
     this.bg = null; // reference to the DOM node
     this.item = null; // reference to the DOM node
@@ -56,6 +57,11 @@ class App extends React.Component {
     this.thumbArray4 = props.thumbs_social//[] //icons 2 group reference holder
     this.thumbArray2 = props.thumbs_yt//[] //icons 2 group reference holder
     this.thumbArray3 = props.thumbs_book //[] //icons 3 group reference holder
+    this.mytitle1 = props.json.section1.title
+    this.mytitle2 = props.json.section2.title
+    this.mytitle3 = props.json.section3.title
+    this.mytitle4 = props.json.section4.title
+    this.mytitle5 = props.json.section5.title
   }
   componentDidMount() {
  
@@ -75,10 +81,10 @@ class App extends React.Component {
   };
 
   render() {
-    const imageOnClick = loc => {
-      console.log("Click " + loc);
-      window.open(loc);
-    };
+    // const imageOnClick = loc => {
+    //   console.log("Click " + loc);
+    //   window.open(loc);
+    // };
     return (
       <React.Fragment>
         <div id="page" className="page">{/* mian-content */}
@@ -109,7 +115,7 @@ class App extends React.Component {
               <div className="container">
                 {/* /banner */}
                 <div className="banner-info-w3layouts">
-                  <h3 className="editContent">Motion, Design, Code</h3>
+                  <p className="editContent" style={{ outline: 'none', color: 'fff', fontSize:'27px',fontWeight:'600',lineHeight:'1'}}>Motion, Design, Code </p>
                   <p className="my-3 editContent" style={{ outline: 'none', cursor: 'inherit' }}> My primary focus has always been motion design. I've been in the advertising and entertainment industry for 20 years.</p> <a href="#about" className="read-more mt-3 btn" style={{ outline: 'none', cursor: 'inherit' }}>Read More </a> </div>
               </div>
             </div>
@@ -183,10 +189,10 @@ class App extends React.Component {
             </div>
           </section>
     {/*/ My Deisgn  ====================================================================*/}
-    <section className="section_banner py-5 editContent" id="work">
+    <section className="section1 py-5 editContent" id="work" style={{  'backgroundColor':this.props.json.section1.bg  }}>
             <div className="container py-md-5">
               <div className="header pb-lg-3 pb-3 text-center">
-                <h3 className="tittle mb-lg-3 mb-3 editContent">Design</h3>
+                <h3 className="tittle mb-lg-3 mb-3 editContent">{this.mytitle1}</h3>
               </div>
                {/*/ Line 1 ====================================================================*/}
               <div className="row ab-info second mt-lg-4 editContent">
@@ -206,10 +212,10 @@ class App extends React.Component {
             </div>
           </section>
     {/*/ My Work  ====================================================================*/}
-          <section className="section_banner py-5 editContent" id="work">
+          <section className="section2 py-5 editContent" id="work" style={{  'backgroundColor':this.props.json.section2.bg  }}>
             <div className="container py-md-5">
-              <div className="header pb-lg-3 pb-3 text-center">
-                <h3 className="tittle mb-lg-3 mb-3 editContent">Banner Animation + Misc</h3>
+              <div className="header pb-lg-3 pb-3 text-center" >
+                <h3 className="tittle mb-lg-3 mb-3 editContent">{this.mytitle2}</h3>
               </div>
                {/*/ Line 1 ====================================================================*/}
               <div className="row ab-info second mt-lg-4 editContent">
@@ -229,10 +235,10 @@ class App extends React.Component {
             </div>
           </section>
 {/*/ My Social  ====================================================================*/}
-            <section className="section_social py-5 editContent" id="work">
+            <section className="section3 py-5 editContent" id="work" style={{  'backgroundColor':this.props.json.section3.bg  }}>
             <div className="container py-md-5">
               <div className="header pb-lg-3 pb-3 text-center">
-                <h3 className="tittle mb-lg-3 mb-3 editContent">Social Media</h3>
+                <h3 className="tittle mb-lg-3 mb-3 editContent">{this.mytitle3}</h3>
               </div>
                {/*/ Line 1 ====================================================================*/}
               <div className="row ab-info second mt-lg-4 editContent">
@@ -253,11 +259,11 @@ class App extends React.Component {
           </section>
  
     {/*/ Youtube ====================================================================*/}
-          <section className="section_yt py-5 editContent" id="">
+          <section className="section4 py-5 editContent" id="" style={{  'backgroundColor':this.props.json.section4.bg  }}>
             <div className="container py-md-5">
               <div className="header pb-lg-3 pb-3 text-center">
-                <h3 className="tittle mb-lg-3 mb-3 editContent">Youtube Content Creator</h3>
-                <h6><a href="https://www.youtube.com/c/derekmosher" target="_blank">
+                <h3 className="tittle mb-lg-3 mb-3 editContent">{this.mytitle4}</h3>
+                <h6><a href="https://www.youtube.com/c/derekmosher" target="_blank" rel="noopener noreferrer" >
                     My Youtube channel
                   </a>
                   &nbsp;has over a 1,100,000 views. I enjoy doing reviews,
@@ -284,12 +290,12 @@ class App extends React.Component {
           </section>
 
   {/*/ Gallery  ============original size ws 600x400 . the popup was taht too. */}
-          <section className="gallery py-5" id="gallery">
+          <section className="section5 gallery py-5" id="gallery" style={{  'backgroundColor':this.props.json.section5.bg  }}>
             <div className="container py-md-5">
               <div className="header text-center">
-                <h3 className="tittle mb-lg-5 mb-3 editContent" style={{ outline: 'none', cursor: 'inherit' }}>Ilustrated Book</h3>
-                <h6> I wrote and illustrated,<b><a href="https://www.amazon.com/Creepy-Little-TV-Guy/dp/197586946X" target="_blank">The Creepy Little TV Guy</a></b>. It's available to purchase on&nbsp;
-                <a href="https://www.amazon.com/Creepy-Little-TV-Guy/dp/197586946X" target="_blank">Amazon</a>. Makes a great gift. Get your copy today!
+                <h3 className="tittle mb-lg-5 mb-3 editContent" style={{ outline: 'none', cursor: 'inherit' }}>{this.mytitle5}</h3>
+                <h6> I wrote and illustrated,<b><a href="https://www.amazon.com/Creepy-Little-TV-Guy/dp/197586946X" target="_blank" rel="noopener noreferrer" >The Creepy Little TV Guy</a></b>. It's available to purchase on&nbsp;
+                <a href="https://www.amazon.com/Creepy-Little-TV-Guy/dp/197586946X" target="_blank" rel="noopener noreferrer" >Amazon</a>. Makes a great gift. Get your copy today!
                 </h6>
               </div>
               <br />

@@ -6,14 +6,16 @@ import * as serviceWorker from './serviceWorker';
 //import json from "./mydata.json"; //console.log("Mydata", Mydata);
 ////////////////////////
 
-const link = "https://derekmosher.github.io/work_to_display/mydata.json"
-const link2 = "https://derekmosher.github.io/work_to_display/mydata_temp.json"
+// const link2 = "https://derekmosher.github.io/work_to_display/mydata.json"
+//const link2 = "https://derekmosher.github.io/work_to_display/mydata_temp.json"
+const link2 = "https://derekmosher.github.io/work_to_display/mydata.json"
 
 fetch(link2)
   .then(response => response.json())
   .then((jsonData) => {
     // jsonData is parsed json object received from url
-    console.log( 'jsonData = ' + jsonData)
+    console.log('hi j')
+    console.dir( jsonData)
     //
     ReactDOM.render(
         <App 
@@ -45,4 +47,4 @@ fetch(link2)
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+serviceWorker.register();
