@@ -47,6 +47,7 @@ class App extends React.Component {
     };
     console.log("Mydata = ", props.json);
     console.log("Mydata title = ", props.json.section1.bg ,props.json.section4.title);
+    console.log("Mydata title = ", props.json.section0.title,props.json.section0.description,props.json.section0.url );
     this.json = props.json
     this.bg = null; // reference to the DOM node
     this.item = null; // reference to the DOM node
@@ -174,9 +175,8 @@ class App extends React.Component {
                     <div className="row">
                     <div className="col-2"style={{ display:'flex',alignItems:'flex-top',justifyContent:'center',backgroundColor:''}}>
                       <IconContext.Provider value={{ size: '6em',color: "red", className: "global-class-name" }}>
- 
- <FaCode  aria-hidden="true" style={{ outline: 'none', cursor: 'inherit' }} />
- </IconContext.Provider>
+                        <FaCode  aria-hidden="true" style={{ outline: 'none', cursor: 'inherit' }} />
+                        </IconContext.Provider>
                       </div>
                       <div className="col-10">
                         <h4 className="mb-3 editContent" style={{ outline: 'none', cursor: 'inherit' }}>Code</h4>
@@ -187,6 +187,30 @@ class App extends React.Component {
                 </div>
               </div>
             </div>
+          </section>
+{/*/ Demo Reel  ====================================================================*/}
+          <section className="section0 gallery py-5" id="gallery" >
+            <div className="container py-md-5">
+              <div className="header text-center">
+                <h3 className="tittle mb-lg-5 mb-3 editContent" style={{ outline: 'none', cursor: 'inherit' }}>{this.props.json.section0.title}</h3>
+                <h6> {this.props.json.section0.description}</h6>
+              </div>
+              <br />
+              <div style={{display:'flex', justifyContent: 'center'}}>
+                <div className="player-wrapper2">
+                    <div className="player-wrapper">
+                    <ReactPlayer
+                      url={this.props.json.section0.url}
+                      className="react-player"
+                      stopped = 'true'
+                      controls
+                      width="640px"
+                      height="360px"
+                    />
+                    </div>
+                </div>
+              </div>
+              </div>
           </section>
     {/*/ My Deisgn  ====================================================================*/}
     <section className="section1 py-5 editContent" id="work" style={{  'backgroundColor':this.props.json.section1.bg  }}>

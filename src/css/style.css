@@ -1569,18 +1569,22 @@ a.move-top span {
 }
 /*-- //Responsive design --*/
 /* Stuff i tacked on this ths shit */
-.section1 {
+
+.section0 {
     background: #d8d8d8;
 }
- .section2{
+ .section1{
     background: #fff;
+}
+.section2 {
+    background: #d8d8d8;
 }
 .section3 {
-    background: #d8d8d8;
-}
-.section4 {
     background: #fff;
 }
-.section5 {
+.section4 {
     background: #d8d8d8;
+}
+.section5 {
+    background: #fff;
 }
