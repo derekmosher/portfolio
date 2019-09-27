@@ -89,12 +89,17 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <div id="page" className="page">{/* mian-content */}
+        
   {/* HOME ===================================================*/}
           <div className="main-content bg bg2" id="home">
+
             <div className="layer">
+              
               {/* header */}
               <header className="editContent">
                 <div className="container-fluid px-lg-5">
+
+
                   {/* nav */}
                   <nav className="py-4 d-lg-flex">
                     <div id="logo">
@@ -111,16 +116,18 @@ class App extends React.Component {
                   </nav>
                   {/* //nav */}
                 </div>
+                   {/* Works sorta welll here------------------------------------------ */}
               </header>
-              {/* //header */}
               <div className="container">
-                {/* /banner */}
-                <div className="banner-info-w3layouts">
-                  <p className="editContent" style={{ outline: 'none', color: 'fff', fontSize:'27px',fontWeight:'600',lineHeight:'1'}}>Motion, Design, Code </p>
-                  <p className="my-3 editContent" style={{ outline: 'none', cursor: 'inherit' }}> My primary focus has always been motion design. I've been in the advertising and entertainment industry for 20 years.</p> <a href="#about" className="read-more mt-3 btn" style={{ outline: 'none', cursor: 'inherit' }}>Read More </a> </div>
+                        <div className="banner-info-w3layouts">
+                          <p className="editContent" style={{ outline: 'none', color: 'fff', fontSize:'27px',fontWeight:'600',lineHeight:'1'}}>Motion, Design, Code </p>
+                          <p className="my-3 editContent" style={{ outline: 'none', cursor: 'inherit' }}> My primary focus has always been motion design. I've been in the advertising and entertainment industry for 20 years.</p> <a href="#about" className="read-more mt-3 btn" style={{ outline: 'none', cursor: 'inherit' }}>Read More </a> </div>
+                        </div>  
               </div>
-            </div>
-          </div>
+            
+
+
+        </div>
   {/* ABOUT ===================================================*/}
           <section className="banner-bottom-wthree py-5 editContent" id="about">
             <div className="container py-md-5 px-lg-5">
