@@ -113,13 +113,12 @@ class App extends React.Component {
     
                 </div>
               </header>
-              {/* //header */}
-              <div className="container">
-                {/* /banner */}
+              {/* <div className="container">
                 <div className="banner-info-w3layouts">
                   <p className="editContent" style={{ outline: 'none', color: 'fff', fontSize:'27px',fontWeight:'600',lineHeight:'100%'}}>Motion, Design, Code </p>
-                  <p className="my-3 editContent" style={{ outline: 'none', cursor: 'inherit' }}> My primary focus has always been motion design. I've been in the advertising and entertainment industry for 20 years.</p> </div>
-              </div>
+                  <p className="my-3 editContent" style={{ outline: 'none', cursor: 'inherit' }}> My primary focus has always been motion design. I've been in the advertising and entertainment industry for 20 years.</p> 
+                  </div>
+              </div> */}
             </div>
             <div style={{display:'flex', justifyContent: 'center'}}>
                                       <ReactPlayer
@@ -142,13 +141,12 @@ class App extends React.Component {
                 <h3 className="tittle mb-lg-5 mb-4 editContent" style={{ outline: 'none', cursor: 'inherit' }}>About</h3>
               </div>
               <div className="content-right-bottom mt-md-0 mt-3 text-center">
-                <p className="mt-2 editContent" style={{ outline: 'none', cursor: 'inherit' }}>I've been <strong className="text-capitalize"> animating, designing,</strong> and <strong className="text-capitalize"> coding </strong> for 20 years.</p>
+                <p className="mt-2 editContent" style={{ outline: 'none', cursor: 'inherit' }}> <strong className="text-capitalize"> Animator, Designer,</strong> and <strong className="text-capitalize"> Coder </strong></p>
                 <p className="mt-3 editContent" style={{ outline: 'none', cursor: 'inherit' }}>        
-                 I started out back in 1997 studying <strong className="text-capitalize">  Digital Storytelling </strong> in Graduate School. 
-                 I had always loved to draw and wanted to see my images come to life. Flash was in demand and I jumped right into it. 
-                 Working at entertainment and advertising companies I created ads, sites, interactive experiences and even some small games. 
-                 Post Flash apocalypse, I transitioned to Adobe Edge, Google Web Designer and ultimately into <strong className="text-capitalize"> HTML, CSS,</strong> and
-                 <strong className="text-capitalize"> JavaScript</strong>. Keeping up with technology I built this new portfolio with Reactjs and JSX.</p>
+                 I started out studying <strong className="text-capitalize">  Digital Storytelling </strong> in Graduate School. 
+                 I had always loved drawing and wanted to see my newspaper comic strip come to life. 
+                 I have always considered myself a <strong>motion designer</strong>, but along my journey I have been tasked with creative concepting, design, storyboarding, production art, prototyping, illustration, video editing, writing, 3d, websites, html emails, and even some small game development.
+                I am now excited to be studying Cinema 4d. I hope to use it for motion graphic clients and for a new cartoon series on YouTube. Keeping up with technology, I built this new portfolio with reactjs and jsx.</p>
               </div>
               <div className="row banner-grids mt-lg-5 editContent">
                 <div className="col-lg-4 banner-grid">
@@ -163,7 +161,7 @@ class App extends React.Component {
                       <div className="col-10">
                         <h4 className="mb-3 editContent" style={{ outline: 'none', cursor: 'inherit' }}>Animation</h4>
                        
-                        <p className="editContent" style={{ outline: 'none', cursor: 'inherit' }}>GSAP, <br/>After Effects,<br/>Google Web Designer,<br/> Premiere</p>
+                        <p className="editContent" style={{ outline: 'none', cursor: 'inherit' }}>After Effects, <br/>Html, css, js, gsap,<br/>Google Web Designer,<br/> Premiere, <br/> Cinema 4d</p>
                       </div>
                     </div>
                   </div>
@@ -179,7 +177,7 @@ class App extends React.Component {
                       </div>
                       <div className="col-10">
                         <h4 className="mb-3 editContent">Design</h4>
-                        <p className="editContent" style={{ outline: 'none', cursor: 'inherit' }}>PhotoShop</p>
+                        <p className="editContent" style={{ outline: 'none', cursor: 'inherit' }}>PhotoShop <br/> Sketch</p>
                       </div>
                     </div>
                   </div>
@@ -194,7 +192,7 @@ class App extends React.Component {
                       </div>
                       <div className="col-10">
                         <h4 className="mb-3 editContent" style={{ outline: 'none', cursor: 'inherit' }}>Code</h4>
-                        <p className="editContent" style={{ outline: 'none', cursor: 'inherit' }}>HTML, CSS, JavaScript, <br/>GSAP<br/>Git<br/>Reactjs, JSX, NPM</p>
+                        <p className="editContent" style={{ outline: 'none', cursor: 'inherit' }}>Html, css, js <br/>gsap<br/>Reactjs, jsx, npm</p>
                       </div>
                     </div>
                   </div>

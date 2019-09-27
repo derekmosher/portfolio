@@ -89,8 +89,6 @@ nav {
     margin: 0;
     padding: 0;
 }
-
-
 #logo a {
     float: left;
     display: initial;
@@ -104,7 +102,6 @@ nav {
     color: #fff;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
     font-family: 'M PLUS Rounded 1c', sans-serif;
-
 }
 
 #logo a span {
@@ -160,7 +157,7 @@ nav ul li ul li:hover {
 
 nav ul.menu li a:hover {
     color: #000;
-    background: rgba(255, 255, 255, 0.1); 
+    background: rgba(255, 255, 255, 0.7); 
 }
 
 .menu li.active a {
@@ -258,8 +255,8 @@ li > a:only-child:after {
         border: none;
         float: right;
         margin-right: 0em;
-        background-color: #fff;
-        color: #1b1d1d;
+        background-color: rgba(0, 0, 0, 0.4); 
+        color: #fff;
         text-transform: capitalize;
         font-weight: 400;
         cursor: pointer !important;
@@ -277,16 +274,16 @@ li > a:only-child:after {
 
     .toggle:hover {
         color: #333;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.7); 
     }
 
     /* Display Dropdown when clicked on Parent Lable */
     [id^=drop]:checked + ul {
         display: block;
-        background: #fff;
+        background: rgba(255, 255, 255, 0.7); 
         padding: 15px 0;
         text-align: center;
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
     }
 
@@ -317,7 +314,6 @@ li > a:only-child:after {
         color: #312f2f;
         font-size: 15px;
     }
-
 
     nav ul li ul li .toggle,
     nav ul ul a {
@@ -364,7 +360,7 @@ li > a:only-child:after {
 @media all and (max-width:568px) {
     [id^=drop]:checked + ul {
         display: block;
-        background: #fff;
+        background: rgba(255, 255, 255, 0.8); 
         padding: 15px 0;
         text-align: center;
         width: 100%;
@@ -1485,7 +1481,7 @@ a.move-top span {
     }
     .main-content,
     .layer {
-        min-height: 20em;
+        min-height: 0em;
     }
     h3.tittle,
     h3.tittle.two {
@@ -1525,7 +1521,7 @@ a.move-top span {
 /*-- //Responsive design --*/
 /* Stuff i tacked on this ths shit */
 .sectionAbout {
-    background: rgb(255, 255, 255);
+    background: #fff;
 }
 .section0 {
     background: #d8d8d8;
