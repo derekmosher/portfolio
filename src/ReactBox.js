@@ -1,5 +1,5 @@
 import React from "react";
-import "./ReactBox.css";
+import "./css/ReactBox.css";
 import { TweenMax,  } from "gsap/TweenMax";
 
 class ReactBox extends React.Component {

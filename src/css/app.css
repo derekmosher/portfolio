@@ -9,7 +9,7 @@ html,
 body {
     margin: 0;
     font-size: 100%;
-    background: #fff;
+    background: #000;
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
 	
@@ -69,16 +69,13 @@ ul {
     padding: 0;
 }
 
-/*-- header --*/
-
-/* header */
-
 /* CSS Document */
 
 header {
     position: absolute;
     z-index: 9;
     width: 100%;
+    /* background: rgba(0, 0, 0, 0.20); */
 }
 
 .toggle,
@@ -148,12 +145,12 @@ nav ul li {
 nav ul.menu li a {
     color: #fff;
     text-transform: capitalize;
-    font-size: 0.95em;
+    font-size: 0.75em;
     letter-spacing: 2px;
     padding-left: 0;
     padding-right: 0;
-    padding: 0.5em 1.5em;
-    background: transparent;
+    padding: 0.5em 1.0em;
+    background: rgba(0, 0, 0, 0.3); ;
     font-weight: 400;
 }
 
@@ -161,16 +158,14 @@ nav ul li ul li:hover {
     background: #fa8383;
 }
 
-/* Background color change on Hover */
-
 nav ul.menu li a:hover {
-    color: #fa8383;
-    background: #fff;
+    color: #000;
+    background: rgba(255, 255, 255, 0.1); 
 }
 
 .menu li.active a {
-    color: #fa8383;
-    background: #fff;
+    color: #000;
+    background: rgba(255, 255, 255, 0.4); 
 }
 
 /* Hide Dropdowns by Default
@@ -393,12 +388,10 @@ li > a:only-child:after {
     color: #fcd000;
 }
 
-/*-- //header --*/
 
-/*-- //header --*/
-
+/* HOME SECTION  ------------------------------------------------------------------*/
 .main-content {
-    background: url(../images/bg2x.jpg) center no-repeat;
+    /* background: url(../images/bg2x.jpg) center no-repeat; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -406,17 +399,19 @@ li > a:only-child:after {
     background-size: cover;
     position: relative;
     min-height: 50em;
+    background: rgba(255, 255, 255, 1); 
 }
 
 .layer {
     min-height: 50em;
-    background: rgba(0, 0, 0, 0.42);
+    /* background: rgba(0, 0, 0, 0.42); */
 }
 
 .banner-info-w3layouts {
     padding-top: 20em;
     text-align: left;
     width: 50%;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .banner-info-w3layouts h3 {
@@ -498,10 +493,6 @@ a.read-more:hover {
 /*-- //banner --*/
 
 /*-- //heading --*/
-
-#about {
-    background: #fff;
-}
 
 .ab-info {
     text-align: center;
@@ -1345,17 +1336,17 @@ a.move-top span {
 @media screen and (max-width: 1440px) {
     .main-content,
     .layer {
-        min-height: 50em;
+        min-height: 20em;
     }
     .main-content.page-inner {
-        min-height: 15em;
+        min-height: 25em;
     }
 }
 
 @media screen and (max-width: 1366px) {
     .main-content,
     .layer {
-        min-height: 47em;
+        min-height: 20em;
     }
     .banner-info-w3layouts {
         padding-top: 19em;
@@ -1371,7 +1362,7 @@ a.move-top span {
     }
     .main-content,
     .layer {
-        min-height: 45em;
+        min-height: 20em;
     }
     .footer-top p {
         padding-right: 0em;
@@ -1399,10 +1390,11 @@ a.move-top span {
     .banner-info-w3layouts {
         padding-top: 14em;
         width: 90%;
+        line-height: 100%;
     }
     .main-content,
     .layer {
-        min-height: 40em;
+        min-height: 20em;
     }
     .ab-info-con p {
         text-align: center;
@@ -1434,11 +1426,12 @@ a.move-top span {
 @media screen and (max-width: 767px) {
     .banner-info-w3layouts {
         padding-top: 12em;
+        line-height: 100%;
     
     }
     .main-content,
     .layer {
-        min-height: 34em;
+        min-height: 20em;
     }
     .mid-right-info {
         margin-top: 2em;
@@ -1463,7 +1456,11 @@ a.move-top span {
 @media screen and (max-width: 736px) {
     .mid-right-info {
         margin-top: 2em;
+        line-height: 50%;
     }
+    .banner-info-w3layouts p {
+        line-height: 140%;
+     }
     .popup {
         width: 85%;
     }
@@ -1480,9 +1477,15 @@ a.move-top span {
         padding-top: 10em;
         width: 100%;
     }
+    .banner-info-w3layouts t {
+        line-height: 100%;
+     }
+    .banner-info-w3layouts p {
+       line-height: 140%;
+    }
     .main-content,
     .layer {
-        min-height: 30em;
+        min-height: 20em;
     }
     h3.tittle,
     h3.tittle.two {
@@ -1491,7 +1494,6 @@ a.move-top span {
     .ab-info h4 {
         font-size: 0.9em !important;
     }
-
     .price-main,
     .ab-content {
         float: left;
@@ -1507,69 +1509,24 @@ a.move-top span {
 
 @media screen and (max-width: 480px) {
     .banner-info-w3layouts p {
-        font-size: 0.9em !important;
+        font-size: 90% !important;
+        line-height: 140%;
     }
     a.read-more {
         padding: 0.8em 2em;
     }
-
     .contact-page button.btn.btn-default {
         width: 35%;
     }
 }
 
-@media screen and (max-width: 414px) {
-    .banner-info-w3layouts h3 {
-        font-size: 2em !important;
-        letter-spacing: 1px;
-    }
-    .contact-page button.btn.btn-default {
-        width: 100%;
-    }
-	.banner-info-w3layouts h3 {
-    font-size: 1.7em !important;
-}
-}
 
-@media screen and (max-width: 384px) {
-    .banner-info-w3layouts h3 {
-        font-size: 1.8em !important;
-        letter-spacing: 1px;
-    }
-    h3.tittle,
-    h3.tittle.two {
-        font-size: 1.8em !important;
-}
-}
-@media screen and (max-width:375px) {
-    .banner-info-w3layouts h3 {
-        font-size: 1.3em !important;
-    }
-    .main-content,
-    .layer {
-        min-height: 28em;
-    }
-    .banner-info-w3layouts {
-        padding-top: 7em;
-        width: 100%;
-    }
-    .main-content,
-    .layer {
-        min-height: 25em;
-    }
-	#logo a {
-    font-size: 0.7em !important;
-	}
-	.ab-content-inner {
-    padding: 1em 0em;
-}
-.test-info-w3ls {
-    padding: 1em 1em;
-}
-}
+
 /*-- //Responsive design --*/
 /* Stuff i tacked on this ths shit */
-
+.sectionAbout {
+    background: rgb(255, 255, 255);
+}
 .section0 {
     background: #d8d8d8;
 }
